@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Scripts.Mover
-{
-    public class CharacterMover : MonoBehaviour
+{    public class CharacterMover : MonoBehaviour
     {
         [SerializeField] CharacterController characterController;
         [SerializeField] Animator animator;
