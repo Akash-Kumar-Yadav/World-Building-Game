@@ -20,7 +20,7 @@ namespace Scripts.Game.Core
         private void Update()
         {
             Vector3 input = characterInputs.Inputs();
-            mover.CharacterMove(characterController, input,characterInputs.speed);
+            mover.Move(characterController, input,characterInputs.speed);
             print(input);
             rotation.RotTo(input, this.transform, characterInputs.turnSpeed);
             characterInputs.CharacterAnimFloat(animator,"speed", input.magnitude);
