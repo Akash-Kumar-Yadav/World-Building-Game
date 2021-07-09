@@ -21,7 +21,7 @@ namespace Scripts.Inventory
         {
             currentButton = GetComponent<Button>();
             currentButton.onClick.AddListener(OnClick);
-            currentMaterial = prefab.GetComponent<Renderer>().sharedMaterial;
+           
 
             castRay = Camera.main.GetComponent<ICastRay>();
         }
