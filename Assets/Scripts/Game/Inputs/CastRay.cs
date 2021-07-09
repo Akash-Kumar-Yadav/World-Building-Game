@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace Scripts.Rays
+namespace Scripts.Game.Inputs
 {
     public class CastRay : MonoBehaviour, ICastRay
     {

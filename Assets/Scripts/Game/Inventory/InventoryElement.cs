@@ -1,7 +1,5 @@
 ﻿using Scripts.Enum;
-using Scripts.Rays;
-using System;
-using System.Collections;
+using Scripts.Game.Inputs;
 using UnityEngine;
 using UnityEngine.UI;
 

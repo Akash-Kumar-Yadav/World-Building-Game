@@ -2055,6 +2055,8 @@ GameObject:
   - component: {fileID: 1205637815303079403}
   - component: {fileID: 5218004205702830723}
   - component: {fileID: 5218004205702830720}
+  - component: {fileID: 5487645420152000346}
+  - component: {fileID: 4795690709545868192}
   m_Layer: 0
   m_Name: The Adventurer Blake
   m_TagString: Untagged
@@ -2135,11 +2137,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e1200f90b87554468a450dd1ee3f98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterInputs: {fileID: 11400000, guid: 06fac19308bfce64caa88b2f0956201d, type: 2}
   characterController: {fileID: 5218004205702830723}
   animator: {fileID: 1205637815303079403}
-  speed: 3
-  cam: {fileID: 0}
-  turnSpeed: 5
+--- !u!114 &5487645420152000346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5218004205702830722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb41ed17b41b65a4e924d5f29a5cd429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4795690709545868192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5218004205702830722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 759dcf18a46b6bc48b3e7f8011fdafb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5220303010312942562
 GameObject:
   m_ObjectHideFlags: 0
@@ -3200,7 +3224,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7291224165816439778}
-  m_LocalRotation: {x: -0.0000005115412, y: 0.9870774, z: -0.16024436, w: -0.0000031510049}
+  m_LocalRotation: {x: -0.00000051049005, y: 0.9870774, z: -0.16024435, w: -0.0000031445302}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3274,7 +3298,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7291224166091501589}
-  m_LocalRotation: {x: -0.00000040048198, y: 0.9922468, z: -0.124283075, w: -0.0000031973545}
+  m_LocalRotation: {x: -0.00000039607343, y: 0.9922468, z: -0.124283075, w: -0.0000031621576}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

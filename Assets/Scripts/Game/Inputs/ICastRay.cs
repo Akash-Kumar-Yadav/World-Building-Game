@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Scripts.Rays
+namespace Scripts.Game.Inputs
 {
     public interface ICastRay
     {
