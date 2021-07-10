@@ -7,5 +7,7 @@ namespace Scripts.Game.Locomotion
         void Move(CharacterController characterController, Vector3 position,float speed);
         void Move(Transform _transform, Vector3 position,float speed);
         void Move(Transform _transform, Vector3 position);
+        void MoveToPoint(Transform _transform, Vector3 position);
+       
     }
 }

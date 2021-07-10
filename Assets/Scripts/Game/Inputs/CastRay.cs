@@ -6,6 +6,14 @@ namespace Scripts.Game.Inputs
     public class CastRay : MonoBehaviour, ICastRay
     {
         [SerializeField] Camera cam;
+
+        private void Start()
+        {
+            if (cam == null)
+            {
+                cam = Camera.main;
+            }
+        }
         public Ray ScreenToRay => cam.ScreenPointToRay(Input.mousePosition);
         public Vector3 ScreenToWorldPoint => cam.ScreenToWorldPoint(Input.mousePosition);
 
@@ -33,6 +41,8 @@ namespace Scripts.Game.Inputs
             }
             return false;
         }
+
+        
     }
 
 
