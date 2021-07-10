@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 8908511878820359484}
   - component: {fileID: 8908511878821326844}
   - component: {fileID: 8839294418764380757}
+  - component: {fileID: -3344247967657417053}
+  - component: {fileID: -8451288388604353898}
+  - component: {fileID: 5328221852484278993}
   m_Layer: 0
   m_Name: Mushroom_02
   m_TagString: Untagged
@@ -96,3 +99,42 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 6c890c97a154a474082af84a379dffce, type: 3}
+--- !u!114 &-3344247967657417053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8908511878819131708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be2b01037c85b548a56b649fb3f89b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalMaterial: {fileID: 2100000, guid: 93caadf4359ae8143aad35b3145d31af, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: f44dafdb25637174a83af0605278283b, type: 2}
+--- !u!114 &-8451288388604353898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8908511878819131708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb41ed17b41b65a4e924d5f29a5cd429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5328221852484278993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8908511878819131708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50c5aa553202394d94ea546869c94cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}

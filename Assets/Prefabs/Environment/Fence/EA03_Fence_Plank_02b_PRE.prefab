@@ -267,6 +267,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4967781367598361104}
   - component: {fileID: 5054592359687428022}
+  - component: {fileID: 1096681348759862497}
+  - component: {fileID: 3924986626424319212}
+  - component: {fileID: 5575727534432563782}
   m_Layer: 0
   m_Name: EA03_Fence_Plank_02b_PRE
   m_TagString: Untagged
@@ -318,3 +321,42 @@ LODGroup:
     renderers:
     - renderer: {fileID: 4948745353881667054}
   m_Enabled: 1
+--- !u!114 &1096681348759862497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4970724244457197396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be2b01037c85b548a56b649fb3f89b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalMaterial: {fileID: 2100000, guid: af96a88a0e2b1cf4a99427ecf41ebbdd, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: f44dafdb25637174a83af0605278283b, type: 2}
+--- !u!114 &3924986626424319212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4970724244457197396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb41ed17b41b65a4e924d5f29a5cd429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5575727534432563782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4970724244457197396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50c5aa553202394d94ea546869c94cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}

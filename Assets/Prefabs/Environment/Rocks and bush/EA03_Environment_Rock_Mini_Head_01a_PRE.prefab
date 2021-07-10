@@ -253,6 +253,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3193157195712611815}
   - component: {fileID: 3358106277923475767}
+  - component: {fileID: -1620416956789215864}
+  - component: {fileID: 2970979783684809452}
+  - component: {fileID: -8621180632068654861}
   m_Layer: 0
   m_Name: EA03_Environment_Rock_Mini_Head_01a_PRE
   m_TagString: Untagged
@@ -304,3 +307,42 @@ LODGroup:
     renderers:
     - renderer: {fileID: 3175625199425950419}
   m_Enabled: 1
+--- !u!114 &-1620416956789215864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3190224947198337903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be2b01037c85b548a56b649fb3f89b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalMaterial: {fileID: 2100000, guid: af96a88a0e2b1cf4a99427ecf41ebbdd, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: f44dafdb25637174a83af0605278283b, type: 2}
+--- !u!114 &2970979783684809452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3190224947198337903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb41ed17b41b65a4e924d5f29a5cd429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-8621180632068654861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3190224947198337903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50c5aa553202394d94ea546869c94cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}

@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 2364663258086182963}
   - component: {fileID: 2374677797201913175}
   - component: {fileID: 2324523057054866851}
+  - component: {fileID: 1826625128057127921}
+  - component: {fileID: -4773633656227583023}
+  - component: {fileID: -1779442990288741168}
   m_Layer: 0
   m_Name: SM_PolygonPrototype_Primitive_Cone_01P
   m_TagString: Untagged
@@ -96,3 +99,42 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 8d1a2ae25a118b4489e87176fcf3bbf9, type: 3}
+--- !u!114 &1826625128057127921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351334242400328269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50c5aa553202394d94ea546869c94cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+--- !u!114 &-4773633656227583023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351334242400328269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb41ed17b41b65a4e924d5f29a5cd429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-1779442990288741168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2351334242400328269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be2b01037c85b548a56b649fb3f89b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalMaterial: {fileID: 2100000, guid: dd41db2cdb4e66e4985303e1287ab101, type: 2}
+  highlightMaterial: {fileID: 2100000, guid: f44dafdb25637174a83af0605278283b, type: 2}

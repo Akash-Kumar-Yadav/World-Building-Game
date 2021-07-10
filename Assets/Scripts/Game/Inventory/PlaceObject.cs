@@ -34,7 +34,7 @@ namespace Scripts.Game.Inventory
                 PlaceObjectUI.OnInstantiated.Invoke(true);
             }
 
-            if (GetComponent<Renderer>().material == null)
+            if (GetComponent<Renderer>() == null)
             {
                 GetComponentInChildren<Renderer>().sharedMaterial = highlightMaterial;
             }
@@ -72,7 +72,7 @@ namespace Scripts.Game.Inventory
         public void Place()
         {
             canMove = false;
-            if (GetComponent<Renderer>().material == null)
+            if (GetComponent<Renderer>() == null)
             {
                 GetComponentInChildren<Renderer>().sharedMaterial = originalMaterial;
             }

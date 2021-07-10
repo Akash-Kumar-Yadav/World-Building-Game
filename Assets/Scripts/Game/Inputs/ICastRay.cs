@@ -9,6 +9,6 @@ namespace Scripts.Game.Inputs
 
         bool CastingRay(string tagName);
         bool GetHitPoint(string tagName,ref Vector3 pos);
-       
+
     }
 }
