@@ -14,6 +14,7 @@ namespace Scripts.Game.Core
 
         private void Start()
         {
+            characterInputs.Init();
             mover = GetComponent<IMover>();
             rotation = GetComponent<IRotation>();
         }
@@ -21,7 +22,6 @@ namespace Scripts.Game.Core
         {
             Vector3 input = characterInputs.Inputs();
             mover.Move(characterController, input,characterInputs.speed);
-            print(input);
             rotation.RotTo(input, this.transform, characterInputs.turnSpeed);
             characterInputs.CharacterAnimFloat(animator,"speed", input.magnitude);
         }

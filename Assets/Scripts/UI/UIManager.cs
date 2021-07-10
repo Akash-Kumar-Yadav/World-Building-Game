@@ -13,23 +13,15 @@ namespace Scripts.UI
         [SerializeField] List<Button> HeaderButtons = new List<Button>();
 
         [SerializeField] GameObject InventoryPanel;
-        [SerializeField] GameObject arrowPanel;
         [SerializeField] GameObject quitPanel;
         [SerializeField] Material highlight;
         [SerializeField] Material normal;
 
-        private bool status;
+        private static bool status;
 
         private void Awake()
         {
-            if (Application.platform == RuntimePlatform.Android)
-            {
-                arrowPanel.SetActive(true);
-            }
-            else
-            {
-                arrowPanel.SetActive(false);
-            }
+            CharacterSpawner.OnCharacterSpawned += InventoryDisable;
         }
 
         private void Start()
@@ -78,13 +70,24 @@ namespace Scripts.UI
             {
                 InventoryPanel.SetActive(status);
                 InventoryPanel.transform.DOScale(new Vector3(1, 1, 1), .5f);
+
+                if (CharacterSpawner.OnCharacterDisable != null)
+                {
+                    CharacterSpawner.OnCharacterDisable.Invoke();
+                }
             }
             else
             {
                 InventoryPanel.transform.DOScale(new Vector3(0, 0, 0), .5f).OnComplete(
                     ()=> InventoryPanel.SetActive(status));
             }
-        }
+        } 
+         void InventoryDisable()
+         {
+            status = false;
+            InventoryPanel.transform.DOScale(new Vector3(0, 0, 0), .5f).OnComplete(
+            ()=> InventoryPanel.SetActive(status));
+         }
 
         private void EnableORDisablePanels(string name)
         {
@@ -101,6 +104,10 @@ namespace Scripts.UI
             }
         }
 
-       
+        private void OnDisable()
+        {
+            CharacterSpawner.OnCharacterSpawned -= InventoryDisable;
+        }
+
     }
 }

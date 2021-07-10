@@ -2059,7 +2059,7 @@ GameObject:
   - component: {fileID: 4795690709545868192}
   m_Layer: 0
   m_Name: The Adventurer Blake
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2124,7 +2124,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: 1.05, z: 0}
 --- !u!114 &5218004205702830720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3224,7 +3224,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7291224165816439778}
-  m_LocalRotation: {x: -0.00000051049005, y: 0.9870774, z: -0.16024435, w: -0.0000031445302}
+  m_LocalRotation: {x: -0.0000005135194, y: 0.9870774, z: -0.16024436, w: -0.0000031631903}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3298,7 +3298,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7291224166091501589}
-  m_LocalRotation: {x: -0.00000039607343, y: 0.9922468, z: -0.124283075, w: -0.0000031621576}
+  m_LocalRotation: {x: -0.00000040048198, y: 0.9922468, z: -0.124283075, w: -0.0000031973545}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

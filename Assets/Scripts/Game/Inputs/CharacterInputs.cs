@@ -13,8 +13,9 @@ namespace Scripts.Game.Inputs
         [SerializeField] string horizontal;
         [SerializeField] string vertical;
 
-        private void Awake()
+        public void Init()
         {
+           
             cam = Camera.main.transform;
         }
         public Vector3 Inputs()

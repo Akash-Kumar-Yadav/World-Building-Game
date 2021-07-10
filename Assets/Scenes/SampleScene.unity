@@ -3153,8 +3153,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.065986, y: 24.44, z: -2.1}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3797,7 +3797,6 @@ MonoBehaviour:
   - {fileID: 393393547}
   - {fileID: 952566819}
   InventoryPanel: {fileID: 34874036}
-  arrowPanel: {fileID: 46015198}
   quitPanel: {fileID: 663647287}
   highlight: {fileID: 2100000, guid: 69d5272dd3cd34d4a86fa1b773e71cdc, type: 2}
   normal: {fileID: 2100000, guid: 128a5d7144b977f49bee2c8bf14782b7, type: 2}
@@ -4026,6 +4025,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1163555720}
+  - component: {fileID: 1163555721}
   m_Layer: 0
   m_Name: Character Spawner
   m_TagString: Untagged
@@ -4041,12 +4041,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1163555719}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1163555721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163555719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 057d9b3a4d899a44d970941788480904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 9093131539352365201, guid: 634b416b396dc71419c2249297dc869a, type: 3}
+  spawnpoint: {fileID: 1163555720}
+  arrowPanel: {fileID: 46015198}
+  camPos: {x: 0, y: 0, z: 0}
+  camRot: {x: 0, y: 0, z: 0, w: 0}
+  cam: {fileID: 0}
+  character: {fileID: 0}
 --- !u!1 &1204049838
 GameObject:
   m_ObjectHideFlags: 0
@@ -4266,7 +4285,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1228179755}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1163555721}
+        m_TargetAssemblyTypeName: Scripts.Game.Core.CharacterSpawner, Assembly-CSharp
+        m_MethodName: Spawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1228179755
 MonoBehaviour:
   m_ObjectHideFlags: 0

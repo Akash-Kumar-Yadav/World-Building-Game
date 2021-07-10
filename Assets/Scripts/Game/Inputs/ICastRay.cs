@@ -7,8 +7,9 @@ namespace Scripts.Game.Inputs
         Ray ScreenToRay { get; }
         Vector3 ScreenToWorldPoint { get; }
 
-        bool CastingRay(string tagName);
+        bool GetRayCast(string tagName);
         bool GetHitPoint(string tagName,ref Vector3 pos);
+        Vector3 GetWorldPosition();
 
     }
 }

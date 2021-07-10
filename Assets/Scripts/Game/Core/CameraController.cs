@@ -30,14 +30,13 @@ namespace Scripts.Game.Core
             transform.position = pos;
 
             if (Input.GetMouseButtonDown(0))
-               castRay.GetHitPoint(Tags.Ground.ToString(), ref origin);
+                origin = castRay.GetWorldPosition();
 
             if (Input.GetMouseButton(0))
             {
-                castRay.GetHitPoint(Tags.Ground.ToString(), ref current);
-                dir = current - origin;
-                dir.y = 0;
-                mover.Move(transform, -dir.normalized, Speed);
+                current = castRay.GetWorldPosition();
+                dir = origin - current;
+                mover.Move(transform, dir);
             }
 
         }

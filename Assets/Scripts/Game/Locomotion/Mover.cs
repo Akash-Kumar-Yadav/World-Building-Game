@@ -25,6 +25,8 @@ namespace Scripts.Game.Locomotion
             _transform.position += position;
         }
 
+     
+
         public void MoveToPoint(Transform _transform, Vector3 position)
         {
             _transform.position = position;
