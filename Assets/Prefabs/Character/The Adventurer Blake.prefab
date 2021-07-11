@@ -2057,6 +2057,7 @@ GameObject:
   - component: {fileID: 5218004205702830720}
   - component: {fileID: 5487645420152000346}
   - component: {fileID: 4795690709545868192}
+  - component: {fileID: 4155548972938054614}
   m_Layer: 0
   m_Name: The Adventurer Blake
   m_TagString: Player
@@ -2138,8 +2139,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterInputs: {fileID: 11400000, guid: 06fac19308bfce64caa88b2f0956201d, type: 2}
-  characterController: {fileID: 5218004205702830723}
-  animator: {fileID: 1205637815303079403}
 --- !u!114 &5487645420152000346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2164,6 +2163,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 759dcf18a46b6bc48b3e7f8011fdafb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &4155548972938054614
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5218004205702830722}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &5220303010312942562
 GameObject:
   m_ObjectHideFlags: 0
@@ -3224,7 +3239,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7291224165816439778}
-  m_LocalRotation: {x: -0.0000005135194, y: 0.9870774, z: -0.16024436, w: -0.0000031631903}
+  m_LocalRotation: {x: -0.0000005167104, y: 0.9870774, z: -0.16024438, w: -0.0000031828456}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

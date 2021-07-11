@@ -11,7 +11,6 @@ namespace Scripts.Game.Inventory
 {
     public class PlaceObject : MonoBehaviour
     {
-       
         [SerializeField] Material originalMaterial;
         [SerializeField] Material highlightMaterial;
 
@@ -52,11 +51,17 @@ namespace Scripts.Game.Inventory
 
         public void Cancel()
         {
+            isDragging = false;
             Destroy(this.gameObject);
+
         }
 
         private void OnMouseDown()
         {
+            if (!canMove)
+            {
+                return;
+            }
             isDragging = true;
         }
         private void OnMouseDrag()
@@ -64,23 +69,23 @@ namespace Scripts.Game.Inventory
             if (!canMove) { return; }
 
             if (Input.GetMouseButtonDown(0))
-                castRay.GetHitPoint(Tags.Ground.ToString(), ref origin);
+            {
+                origin = castRay.GetWorldPosition();
+            }
 
             if (Input.GetMouseButton(0))
             {
-                castRay.GetHitPoint(Tags.Ground.ToString(), ref current);
+                current = castRay.GetWorldPosition();
                 dir = current - origin;
                 dir.y = 0;
                 mover.MoveToPoint(transform, new Vector3(dir.x, transform.position.y, dir.z));
             }
         }
-        private void OnMouseUp()
-        {
-            isDragging = false;
-        }
+      
         public void Place()
         {
             canMove = false;
+            isDragging = false; 
             if (GetComponent<Renderer>() == null)
             {
                 GetComponentInChildren<Renderer>().sharedMaterial = originalMaterial;

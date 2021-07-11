@@ -36,6 +36,7 @@ namespace Scripts.UI
         {
           var inv = obj.GetComponent<IInventoryElement>();
             inv.InstantiateObject();
+            isDragging = false;
         }
     }
 }

@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 1096681348759862497}
   - component: {fileID: 3924986626424319212}
   - component: {fileID: 5575727534432563782}
+  - component: {fileID: 6438937596571772357}
   m_Layer: 0
   m_Name: EA03_Fence_Plank_02b_PRE
   m_TagString: Untagged
@@ -360,3 +361,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
+--- !u!65 &6438937596571772357
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4970724244457197396}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.5347018, y: 3.0500653, z: 0.82}
+  m_Center: {x: 1.6175001, y: 1.5167345, z: 0.023487292}

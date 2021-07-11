@@ -405,6 +405,7 @@ GameObject:
   - component: {fileID: 6125500954877489930}
   - component: {fileID: -4372873280703345219}
   - component: {fileID: 7750278319179903784}
+  - component: {fileID: 6486600975706184255}
   m_Layer: 0
   m_Name: EA03_Village_OutBuilding_Cubby_01d_PRE
   m_TagString: Untagged
@@ -506,6 +507,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb41ed17b41b65a4e924d5f29a5cd429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &6486600975706184255
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3592523458841971507}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.19, y: 5.9, z: 5.89}
+  m_Center: {x: 0, y: 2.75, z: 0}
 --- !u!1 &3592564544497253677
 GameObject:
   m_ObjectHideFlags: 0

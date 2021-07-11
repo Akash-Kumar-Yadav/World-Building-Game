@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -5520823798379652315}
   - component: {fileID: -8824522076515398076}
   - component: {fileID: 3654339052505575229}
+  - component: {fileID: 8193624780386004835}
   m_Layer: 0
   m_Name: EA03_Environment_Road_Cobble_Corner_01a_PRE
   m_TagString: Untagged
@@ -103,6 +104,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb41ed17b41b65a4e924d5f29a5cd429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &8193624780386004835
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3659207829242124616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 1, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3659368063529102838
 GameObject:
   m_ObjectHideFlags: 0
