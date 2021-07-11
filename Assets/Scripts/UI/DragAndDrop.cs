@@ -8,8 +8,11 @@ namespace Scripts.UI
     {
         [SerializeField] GameObject obj;
         [SerializeField] Vector3 origin;
+
+        public static bool isDragging;
         private void Start()
         {
+            isDragging = false;
             obj = this.gameObject;
         }
         public void OnBeginDrag(PointerEventData eventData)
@@ -19,11 +22,13 @@ namespace Scripts.UI
 
         public void OnDrag(PointerEventData eventData)
         {
+            isDragging = true;
             obj.transform.position = eventData.position;
         }
 
         public void OnEndDrag(PointerEventData eventData)
         {
+            isDragging = false;
             obj.transform.position = origin;
         }
 

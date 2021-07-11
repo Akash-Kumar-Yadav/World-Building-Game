@@ -56,6 +56,8 @@ namespace Scripts.UI
             if (character == null)
             {
                 character = GameObject.FindGameObjectWithTag("Player");
+                if (character == null)
+                    return;
             }
             Destroy(character.gameObject);
             cam.transform.position = camPos;

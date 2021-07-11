@@ -1,6 +1,8 @@
 ﻿using Scripts.Enum;
 using Scripts.Game.Inputs;
+using Scripts.Game.Inventory;
 using Scripts.Game.Locomotion;
+using Scripts.UI;
 using System.Collections;
 using UnityEngine;
 
@@ -29,6 +31,10 @@ namespace Scripts.Game.Core
             pos.z = Mathf.Clamp(transform.position.z, -35, 35);
             transform.position = pos;
 
+            if (PlaceObject.isDragging || DragAndDrop.isDragging)
+            {
+                return;
+            }
             if (Input.GetMouseButtonDown(0))
                 origin = castRay.GetWorldPosition();
 

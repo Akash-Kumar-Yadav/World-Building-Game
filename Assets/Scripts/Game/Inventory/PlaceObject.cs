@@ -5,6 +5,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using Scripts.UI;
+using DG.Tweening;
 
 namespace Scripts.Game.Inventory
 {
@@ -15,6 +16,7 @@ namespace Scripts.Game.Inventory
         [SerializeField] Material highlightMaterial;
 
         bool canMove;
+        public static bool isDragging;
         Vector3 origin;
         Vector3 current;
         Vector3 dir;
@@ -25,7 +27,8 @@ namespace Scripts.Game.Inventory
         private void Awake()
         {
             canMove = true;
-           
+            isDragging = true;
+
             castRay = GetComponent<ICastRay>();
             mover = GetComponent<IMover>();
 
@@ -52,6 +55,10 @@ namespace Scripts.Game.Inventory
             Destroy(this.gameObject);
         }
 
+        private void OnMouseDown()
+        {
+            isDragging = true;
+        }
         private void OnMouseDrag()
         {
             if (!canMove) { return; }
@@ -66,8 +73,10 @@ namespace Scripts.Game.Inventory
                 dir.y = 0;
                 mover.MoveToPoint(transform, new Vector3(dir.x, transform.position.y, dir.z));
             }
-
-
+        }
+        private void OnMouseUp()
+        {
+            isDragging = false;
         }
         public void Place()
         {
@@ -75,10 +84,15 @@ namespace Scripts.Game.Inventory
             if (GetComponent<Renderer>() == null)
             {
                 GetComponentInChildren<Renderer>().sharedMaterial = originalMaterial;
+                transform.DOScale(Vector3.zero, 0);
+                transform.DOScale(Vector3.one, .5f);
+
             }
             else
             {
                 GetComponent<Renderer>().sharedMaterial = originalMaterial;
+                transform.DOScale(Vector3.zero, 0);
+                transform.DOScale(Vector3.one, .5f);
             }
             PlaceObjectUI.OnYesClicked -= Place;
             PlaceObjectUI.OnNoClicked -= Cancel;
