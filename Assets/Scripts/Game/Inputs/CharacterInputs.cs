@@ -12,16 +12,48 @@ namespace Scripts.Game.Inputs
 
         [SerializeField] string horizontal;
         [SerializeField] string vertical;
+        [SerializeField] MobileInput mobileInput;
 
         public void Init()
         {
-           
+            mobileInput = FindObjectOfType<MobileInput>();
             cam = Camera.main.transform;
         }
         public Vector3 Inputs()
         {
-            float h = Input.GetAxis(horizontal);
-            float v = Input.GetAxis(vertical);
+            float h = 0;
+            float v = 0;
+            if (!CheckPlatform.isAndroid)
+            {
+                h = Input.GetAxis(horizontal);
+                v = Input.GetAxis(vertical);
+
+            }
+            else
+            {
+                if (mobileInput.forward)
+                {
+                    v = 1;
+                }
+                else if (mobileInput.back)
+                {
+                    v = -1;
+                } 
+                else if (mobileInput.left)
+                {
+                    h = -1;
+                } 
+                else if (mobileInput.right)
+                {
+                    h = 1;
+                }
+                else
+                {
+                    h = 0;
+                    v = 0;
+                }
+            }
+           
 
             var right = cam.right;
             var forward = cam.forward;

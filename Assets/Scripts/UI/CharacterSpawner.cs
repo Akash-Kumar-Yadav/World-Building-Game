@@ -18,20 +18,11 @@ namespace Scripts.UI
 
         public static Action OnCharacterSpawned;
         public static Action OnCharacterDisable;
-        public bool isAndroid { get; private set; }
+       
         private void Awake()
         {
             Init();
 
-            if (Application.platform == RuntimePlatform.Android)
-            {
-                isAndroid = true;
-            }
-            else
-            {
-                isAndroid = false;
-
-            }
 
         }
 
@@ -54,7 +45,7 @@ namespace Scripts.UI
             {
                 Instantiate(prefab, spawnpoint.position, Quaternion.identity);
             }
-            if (isAndroid)
+            if (CheckPlatform.isAndroid)
             {
                 arrowPanel.SetActive(true);
             }
