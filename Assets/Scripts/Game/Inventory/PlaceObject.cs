@@ -36,13 +36,13 @@ namespace Scripts.Game.Inventory
                 PlaceObjectUI.OnInstantiated.Invoke(true);
             }
 
-            if (GetComponent<Renderer>() == null)
+            if (GetComponent<MeshRenderer>() == null)
             {
-                GetComponentInChildren<Renderer>().sharedMaterial = highlightMaterial;
+                GetComponentInChildren<MeshRenderer>().sharedMaterial = highlightMaterial;
             }
             else
             {
-                GetComponent<Renderer>().sharedMaterial = highlightMaterial;
+                GetComponent<MeshRenderer>().sharedMaterial = highlightMaterial;
             }
 
             PlaceObjectUI.OnYesClicked += Place;
@@ -86,16 +86,16 @@ namespace Scripts.Game.Inventory
         {
             canMove = false;
             isDragging = false; 
-            if (GetComponent<Renderer>() == null)
+            if (GetComponent<MeshRenderer>() == null)
             {
-                GetComponentInChildren<Renderer>().sharedMaterial = originalMaterial;
+                GetComponentInChildren<MeshRenderer>().sharedMaterial = originalMaterial;
                 transform.DOScale(Vector3.zero, 0);
                 transform.DOScale(Vector3.one, .5f);
 
             }
             else
             {
-                GetComponent<Renderer>().sharedMaterial = originalMaterial;
+                GetComponent<MeshRenderer >().sharedMaterial = originalMaterial;
                 transform.DOScale(Vector3.zero, 0);
                 transform.DOScale(Vector3.one, .5f);
             }

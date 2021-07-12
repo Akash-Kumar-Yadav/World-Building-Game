@@ -70,7 +70,6 @@ namespace Scripts.Game.Inputs
 
         public void CharacterAnimFloat(Animator animator,string animName ,float animValue)
         {
-            
             animator.SetFloat(animName, animValue);
         }
     }

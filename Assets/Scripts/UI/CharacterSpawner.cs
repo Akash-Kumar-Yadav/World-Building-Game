@@ -22,8 +22,6 @@ namespace Scripts.UI
         private void Awake()
         {
             Init();
-
-
         }
 
         private void Init()
